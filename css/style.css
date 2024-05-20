@@ -255,7 +255,7 @@ footer{
             "box6";
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(1, 1fr); 
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
     .box{
         width: 90vw;
