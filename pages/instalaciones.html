@@ -8,6 +8,8 @@
     <link rel="icon" href="../imagenes/logo.png" type="image/png" />
     <title>Instalaciones</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <body id="arriba">
@@ -22,6 +24,16 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <div class="dropdown">
+            <i class="bi bi-list"type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./tratamientos.html">Tratamientos</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="#">Instalaciones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section>
@@ -69,12 +81,12 @@
             <img class="ir-arriba" src="../assets/img/regresar_al_inicio.png" alt="regresar al inicio">
         </a>
         <h6>&#169; Copyright 2024<6>
-                <div class="position-fixed"> <a class="p-icono-whatsapp" href="https://web.whatsapp.com/"
-                        target="_blank"> <img class="logo-whatsapp-fijo" src="../assets/img/WhatsApp-logo.png"
-                            alt="logo whatsapp">
-                        <p> AGENDÁ TU TURNO <br> HOY!</p>
-                    </a>
-                </div>
+        <div class="floating-button">
+            <a class="p-icono-whatsapp" href="https://web.whatsapp.com/" target="_blank"> 
+                <img class="logo-whatsapp-fijo" src="../assets/img/WhatsApp-logo.png" alt="logo whatsapp">
+                <p> AGENDÁ TU TURNO <br> HOY!</p>
+            </a>
+        </div>
     </footer>
 </body>
 
