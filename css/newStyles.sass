@@ -1,0 +1,33 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    
+header
+    width: 98.5vw
+    background-color: #f0a4c1
+    background-image: url("data:image/svg+xml,%3Csvg width='44' height='12' viewBox='0 0 44 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 12v-2L0 0v10l4 2h16zm18 0l4-2V0L22 10v2h16zM20 0v8L4 0h16zm18 0L22 8V0h16z' fill='%23ff8fb5' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E")
+    ul
+        li
+            padding: 15px
+    nav
+        display: inline-block
+
+.fuente-menu
+    li
+        display: inline-block
+
+@media (max-width: 768px)
+    header
+        height: 15vh
+    .dropdown
+        display: flex
+        margin: 20px
+    .dropdown-menu
+        li
+            background-color: salmon
+            a
+                color: black
+                text-decoration: none
+                z-index: 110
+
