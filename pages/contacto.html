@@ -36,54 +36,65 @@
     </header>
     <main>
         <h1 class="titulo-h1"> CONTACTO </h1>
-        <section class="formulario-flex">
-            <form action="submit">
-                <div>
-                    <label class="fuente-formulario" for="">Nombre</label>
-                    <input placeholder="Hugo" type="text">
+        <section class="container mt-4">
+            <form class="row">
+                <section class="col-12 col-md-6">
+                    <div>
+                        <label for="nameId" class="form-label">Nombre</label>
+                        <input placeholder="Hugo" type="text" class="form-control" id="nameId">
+                    </div>
+                    <div>
+                        <label for="surname" class="form-label">Apellido</label>
+                        <input placeholder="Sanchez" type="text" class="form-control" id="surname">
+                    </div>
+                    <div>
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input placeholder="hugo@email.com" type="email" class="form-control" id="inputEmail4">
+                    </div>
+                </section>
+        
+                <div class="col-md-6">
+                    <label for="inputAddress2" class="form-label">Escriba su consulta</label>
+                    <textarea placeholder="Escriba su consulta" type="text" class="form-control" id="inputAddress2" cols="30" rows="6"></textarea>
                 </div>
-                <div>
-                    <label class="fuente-formulario" for="">Apellido</label>
-                    <input placeholder="Sanchez" type="text">
+                
+                <section class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Acepto terminos y condiciones. 
+                    </label>
+                  </div>
+                </section>
+        
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Aceptar</button>
                 </div>
-                <div>
-                    <label class="fuente-formulario" for="">Email</label>
-                    <input placeholder="hugo@mimail.com" type="text">
-                </div>
-                <div>
-                    <label class="fuente-formulario" for="">Escriba su consulta</label>
-                    <textarea placeholder="descripcion de la consulta" type="text"></textarea>
-                </div>
-                <button class="fuente-formulario" type="reset">
-                    Borrar Formulario
-                </button>
-                <button class="fuente-formulario" type="submit">
-                    Enviar Formulario
-                </button>
+        
             </form>
         </section>
-        <section class="contactos-flex">
-            <div class="logos-contactos">
+        <section>
+            <div>
                 <i class="bi bi-whatsapp" alt="logo de whatsapp"></i>
                 <label class="clase-contactos">Whatsapp</label>
             </div>
-            <div class="logos-contactos">
+            <div>
                 <i class="bi bi-geo-alt" alt="logo de ubicacion"></i>
                 <label class="clase-contactos" for="">Av Cordoba 601 1B</label>
             </div>
-            <div class="logos-contactos">
+            <div>
                 <i class="bi bi-clock" alt="reloj"></i> 
                 <label class="clase-contactos" for="">Lunes - Viernes de 9 a 16</label>
             </div>
-            <div class="logos-contactos">
+            <div>
                 <i class="bi bi-envelope-heart" alt="contacto mail"> </i> 
                 <label class="clase-contactos" for="">stefani@mail.com</label>
             </div>
         </section>
-        <section>
+        <section class="d-flex justify-content-center">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13132.260674265006!2d-58.38310044999999!3d-34.6277934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb247c4962cb%3A0x691659007e69251b!2sPlaza%20Garay!5e0!3m2!1ses!2sar!4v1713128804348!5m2!1ses!2sar"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                width="50%" height="20%" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
