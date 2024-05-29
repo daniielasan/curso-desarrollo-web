@@ -21,6 +21,10 @@ header nav {
   display: inline-block;
 }
 
+.dropdown {
+  display: none;
+}
+
 @media (max-width: 768px) {
   header {
     height: 15vh;
@@ -48,10 +52,6 @@ header nav {
     width: 5vw;
   }
 }
-.dropdown {
-  display: none;
-}
-
 .fuente-menu {
   font-size: 14px;
   font-family: "roboto mono";
@@ -221,4 +221,121 @@ footer {
 .flex-parrafo {
   font-family: "open sans";
   font-size: 15px;
+}
+
+.tratamientos-container {
+  width: 98.5vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.grids-tratamientos {
+  display: grid;
+  width: 98.5vw;
+  grid-template-areas: "box1   box2" "box3   box4" "box5   box6";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  -moz-column-gap: 200px;
+       column-gap: 200px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .grids-tratamientos {
+    display: grid;
+    width: 98.5vw;
+    grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6";
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 2rem;
+  }
+  .box {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0a4c1;
+    margin: 10;
+  }
+  .img-tratamiento {
+    width: 60vw;
+    height: 20vh;
+  }
+  .box {
+    width: 70vw;
+    height: 30vh;
+  }
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0a4c1;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.bi {
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.bi-facebook {
+  color: blue;
+}
+
+.bi-facebook:hover {
+  color: black;
+}
+
+.bi-instagram {
+  color: #ff0460;
+}
+
+.bi-instagram:hover {
+  color: black;
+}
+
+.bi-twitter {
+  color: rgb(67, 125, 252);
+}
+
+.bi-twitter:hover {
+  color: black;
+}
+
+.bi-send-check-fill:hover {
+  color: blue;
+}
+
+.button {
+  background: transparent;
+  border-color: transparent;
 }/*# sourceMappingURL=newStyles.css.map */
