@@ -1,0 +1,13 @@
+@mixin display($display, $flexDirection: column, $alignItems: null, $justifyContent: null)
+    display: $display
+    flex-direction: $flexDirection
+    @if $alignItems != null
+        align-items: $alignItems
+    @if $justifyContent != null
+        justify-content: $justifyContent
+
+@mixin color($background: null, $text)
+    @if $background != null
+        background-color: $background
+    @if $text != null
+        color: $text
