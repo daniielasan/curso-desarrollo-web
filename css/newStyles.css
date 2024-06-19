@@ -75,7 +75,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 70vh;
   background-image: linear-gradient(90deg, rgba(228, 155, 155, 0.7), rgba(5, 7, 12, 0.3)), url(../assets/img/imagenes.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -159,11 +159,12 @@ h2 {
 footer {
   position: fixed;
   bottom: 0;
-  height: 20vh;
+  height: 15vh;
   padding: 20px;
   background-color: salmon;
   width: 98.5vw;
   display: flex;
+  align-content: center;
 }
 
 .floating-button {
@@ -302,6 +303,15 @@ footer {
   height: 80vh;
 }
 
+.extra-footer {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .extra-footer {
+    display: block !important;
+  }
+}
 @media (max-width: 768px) {
   header {
     height: 15vh;
@@ -358,7 +368,6 @@ footer {
   }
   .image-fondo {
     text-align: center;
-    height: 50vh;
   }
   h1 {
     font-size: 35px;
@@ -397,4 +406,7 @@ footer {
   .form-footer {
     display: none;
   }
-}
+  .redes-sociales {
+    min-width: 40%;
+  }
+}/*# sourceMappingURL=newStyles.css.map */
