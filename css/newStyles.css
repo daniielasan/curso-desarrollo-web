@@ -75,7 +75,7 @@ header nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 90vh;
   background-image: linear-gradient(90deg, rgba(228, 155, 155, 0.7), rgba(5, 7, 12, 0.3)), url(../assets/img/imagenes.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -89,6 +89,10 @@ header nav {
   justify-content: center;
   color: #ffffff;
   font-size: 50px;
+  width: 70%;
+}
+.h2-index p {
+  text-align: justify;
 }
 
 .position-sticky {
@@ -99,7 +103,7 @@ header nav {
   justify-content: space-between;
 }
 
-#navigation, .box {
+#navigation {
   display: flex;
   align-items: center;
 }
@@ -134,7 +138,7 @@ p {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 15px;
   font-family: cursive;
 }
 
@@ -159,7 +163,7 @@ h2 {
 footer {
   position: fixed;
   bottom: 0;
-  height: 15vh;
+  height: 20vh;
   padding: 20px;
   background-color: salmon;
   width: 98.5vw;
@@ -174,8 +178,8 @@ footer {
 }
 
 .logo-whatsapp-fijo {
-  height: 60px;
-  width: 100px;
+  height: 20px;
+  width: 30px;
 }
 
 .p-icono-whatsapp {
@@ -198,12 +202,42 @@ footer {
 }
 
 .flex-subtitulo {
-  padding: 2%;
+  padding: 5px;
+  font-family: "open sans";
+  font-size: 18px;
 }
 
 .flex-parrafo {
   font-family: "open sans";
-  font-size: 15px;
+  font-size: 14px;
+}
+
+.grid-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.row-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: blue;
+  margin: 10px;
+  background-color: #f0a4c1;
+}
+
+.grid-item p {
+  text-align: center;
+  line-height: 1.6;
 }
 
 .tratamientos-container {
@@ -215,46 +249,9 @@ footer {
   margin-bottom: 20vh;
 }
 
-.grids-tratamientos {
-  display: grid;
-  width: 98.5vw;
-  grid-template-areas: "box1   box2" "box3 box4" "box5 box6";
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 30px;
-  -moz-column-gap: 200px;
-       column-gap: 200px;
-  padding: 10px;
-}
-
 .box {
-  flex-direction: column;
-  justify-content: center;
   background-color: #f0a4c1;
-}
-
-.box1 {
-  grid-area: box1;
-}
-
-.box2 {
-  grid-area: box2;
-}
-
-.box3 {
-  grid-area: box3;
-}
-
-.box4 {
-  grid-area: box4;
-}
-
-.box5 {
-  grid-area: box5;
-}
-
-.box6 {
-  grid-area: box6;
+  margin: 10px;
 }
 
 .bi {
@@ -300,7 +297,11 @@ footer {
   background: #ee9ca7;
   background: linear-gradient(to right, #ffdde1, #ee9ca7);
   width: 98.5vw;
-  height: 100%;
+  height: 120%;
+}
+
+.col-lg-6 {
+  margin-bottom: 2rem;
 }
 
 .extra-footer {
@@ -334,26 +335,9 @@ footer {
   .form-footer {
     visibility: hidden;
   }
-  #navigation, .box {
+  #navigation {
     display: none;
     width: 5vw;
-  }
-  .grids-tratamientos {
-    display: grid;
-    width: 98.5vw;
-    grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6";
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(1, 1fr);
-    margin-left: 2rem;
-  }
-  .box {
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0a4c1;
-    margin: 10;
   }
   .img-tratamiento {
     width: 60vw;
@@ -368,6 +352,11 @@ footer {
   }
   .image-fondo {
     text-align: center;
+    height: 100%;
+    overflow-y: scroll;
+  }
+  p {
+    font-size: 12px;
   }
   h1 {
     font-size: 35px;
@@ -409,4 +398,7 @@ footer {
   .redes-sociales {
     min-width: 40%;
   }
-}/*# sourceMappingURL=newStyles.css.map */
+  footer {
+    height: 15vh;
+  }
+}
