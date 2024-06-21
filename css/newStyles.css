@@ -352,7 +352,6 @@ footer {
   }
   .image-fondo {
     text-align: center;
-    height: 100%;
     overflow-y: scroll;
   }
   p {
